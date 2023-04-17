@@ -1,0 +1,10 @@
+<h1>{{activity_name}}</h1>
+{%if link%}
+<div><a href={{link}}>Some inspiration for this task? Click here!</a></div></br>
+{%endif%}
+<form action="{% url 'get_activity' %}">
+    <input type="submit" value="Gimme another idea">
+</form>
+<form action="{% url 'activity' %}">
+    <input type="submit" value="Let's start from beginning!">
+</form>
